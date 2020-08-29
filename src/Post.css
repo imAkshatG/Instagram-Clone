@@ -1,5 +1,5 @@
 .post {
-    max-width: 500px;
+    max-width: 700px;
     background-color: white;
     border: 1px solid lightgray;
     margin-bottom: 45px;
@@ -25,4 +25,37 @@
 
 .post__avatar {
     margin-right: 10px;
+}
+
+.post__liked {
+    border: none;
+    padding: 10px;
+    color: Red;
+    background-color: transparent;
+    font-size: 20px;
+    margin-left:10px;
+    cursor: pointer;
+}
+.form__comments {
+    display: flex;
+    margin-top: 10px;
+}
+
+.post__input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+}
+
+.post__button {
+    flex: 0;
+    background-color: transparent;
+    color: #6082a3;
+    border: none;
+    border-top: 1px solid lightgray;
+}
+
+.post__comments {
+    padding: 20px;
 }
