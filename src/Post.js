@@ -77,7 +77,7 @@ function Post({ postId, user, username, caption, imageURL, likes, likedBy }) {
             </div>
             <img className="post__image" alt="" src={imageURL} />
             <h4 className="post__text"><strong style={{ margin: '5px' }}>{username}</strong>{caption}</h4>
-            <button id="likeButton" onClick={(event) => likeHandler(event, postId)} className="post__liked">{ user && (likedBy.length !== 0 && likedBy.includes(user.displayName)) ? <b>Liked By You</b> : <p>Likes</p>}</button>
+            <button id="likeButton" onClick={(event) => likeHandler(event, postId)} className="post__liked">{ user && (likedBy.length !== 0 && likedBy.includes(user.displayName)) ? <b style = {{color: "red", fontSize:"40px", animation : "ease-in"}}>&#9829;</b> : <p style={{color:"gray", fontSize: "30px"}}>&#9829;</p>}</button>
             <b style={{ marginLeft: "5px" }}>{likes}</b>
             <div className="post__comments">
                 {comments.map(comment => {
